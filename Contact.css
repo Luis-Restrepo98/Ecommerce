@@ -1,0 +1,226 @@
+@import url(https://fonts.google.com/specimen/Kumbh+Sans);
+
+:root {
+    --orange: hsl(26, 100%, 55%);
+    --pale-orange: hsl(25, 100%, 94%);
+    --very-dark-blue: hsl(220, 13%, 13%);
+    --dark-grayish-blue: hsl(219, 9%, 45%);
+    --grayish-blue: hsl(220, 14%, 75%);
+    --light-grayish-blue: hsl(223, 64%, 98%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --black-modal: hsla(0, 0%, 0%, 0.5);
+    --font: "Kumbh Sans", sans-serif;
+  }
+  
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "kumbh Sans", sans-serif;
+}
+
+.main{
+    width: 446px;
+   /*  border: 1px solid black; */
+    margin: auto;
+    position: relative;
+}
+@media (min-width: 1115px){
+    .main{
+        width: 1115px;
+    }   
+}
+.header{
+   /* border: 1px solid red;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+    padding:0 24px ;
+}
+@media (min-width: 1115px){
+    .header{
+        height: 112px;
+        border-bottom: 1px solid var(--grayish-blue);
+    }  
+}
+.header__navegador{
+    width: 175px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media (min-width: 1115px){
+    .header__navegador{
+        width: 590px;
+    } 
+}
+.menu:hover{
+    cursor: pointer;
+}
+@media (min-width: 1115px){
+    .menu{
+        display: none;
+    } 
+}
+.header__cart-profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70px;
+}
+@media (min-width: 1115px){
+    .header__cart-profile{
+        width:121px ;
+    } 
+}
+.header_cart:hover{
+    position: relative;
+    cursor: pointer;
+}
+
+.header_cart--notification{
+    display: none;
+    background-color: var(--orange);
+    width: 15px;
+    height: 12px;
+    border-radius: 16px;
+   /*  position: absolute; */
+    top: 5px;
+    right: 5px;
+    font-size: 0.6em;
+    text-align: center;
+    color: var(--white);
+}
+.avatar{ 
+    width: 24px;
+}
+@media (min-width: 1115px){
+    .avatar{
+        width:48px ;
+    } 
+}
+.avatar:hover{
+cursor: pointer;
+    border: 2px solid var(--orange);
+    border-radius: 50%;
+}
+
+/* /nav/ */
+.iconos-head{
+    display: none;
+    width: 400px;
+    
+} 
+.iconos-head__items{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.iconos-head__link{
+    text-decoration: none;
+    color: var(--dark-grayish-blue);
+    display: block;
+    height: 112px;
+    padding-top: 42px;
+}
+@media (min-width: 1115px){
+    .iconos-head{
+        display: block;
+    } 
+}
+
+.iconos-head__link:hover{
+    border-bottom: 4px solid var(--orange);
+}
+.head-background{
+ /*    /background-color: var(--black-modal);/ */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none;
+    
+}
+  
+  .contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #FFA500; /* Cambiado a color naranja */
+  }
+  
+  /* Lista de contactos */
+  #contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .contact-item:last-child {
+    border-bottom: none;
+  }
+  
+  .contact-icon {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #FFA500; /* Cambiado a color naranja */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+  }
+  
+  .contact-details {
+    flex: 1;
+  }
+  
+  .contact-name {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .contact-phone,
+  .contact-email {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Estilos para enlaces */
+  a {
+    color: #FFA500; /* Cambiado a color naranja */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
