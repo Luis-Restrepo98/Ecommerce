@@ -171,3 +171,52 @@ body {
 .iconos-head__close-icon:hover {
     cursor: pointer;
 }
+h1 {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  #tabla-personas {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  #tabla-personas th,
+  #tabla-personas td {
+    padding: 10px;
+    text-align: center;
+  }
+
+  #tabla-personas th {
+    background-color: #f2f2f2;
+  }
+
+  #tabla-personas tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  #tabla-personas tr:hover {
+    background-color: #ddd;
+  }
+  .accion-buttons {
+    display: flex;
+    gap: 10px;
+  }
+
+  .accion-buttons button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .editar-button {
+    background-color: #007bff;
+    color: white;
+  }
+
+  .eliminar-button {
+    background-color: #dc3545;
+    color: white;
+  }
