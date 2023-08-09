@@ -1,4 +1,4 @@
-@import url(https://fonts.google.com/specimen/Kumbh+Sans);
+
 
 :root {
     --orange: hsl(26, 100%, 55%);
@@ -198,7 +198,7 @@ background-color: var(--white);
 .tunnel__image-container {
     height: 300px;
     width: 100%;
-    background-image: url("./images/image-product-1.jpg");
+    background-image: url("../images/image-product-1.jpg");
     background-position-y: -35px;
     background-size: cover;
 }
@@ -485,10 +485,10 @@ background-color: var(--white);
 }
 .modal-tunnel__close:hover {
     cursor: pointer;
-    content: url("./images/icon-close-orange.svg");
+    content: url("../images/icon-close-orange.svg");
 }
 .modal-tunnel__image-container {
-    background-image: url("./images/image-product-1.jpg");
+    background-image: url("../images/image-product-1.jpg");
     height: 446px;
     width: 446px;
     background-size: cover;
@@ -609,5 +609,3 @@ button {
     border-bottom: 3px solid rgba(0, 0, 0, 0.082);
     cursor: pointer;
 }
-
-/* --------- */
