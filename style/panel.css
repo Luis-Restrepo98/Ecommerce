@@ -220,3 +220,10 @@ h1 {
     background-color: #dc3545;
     color: white;
   }
+
+  .agregar {
+        position: absolute;
+        top: 20%;
+        right: 60px; /* Ajusta este valor para la separación deseada desde el borde derecho */
+        transform: translateY(-50%);
+      }

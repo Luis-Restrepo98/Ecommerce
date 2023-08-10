@@ -102,6 +102,18 @@
         "imagenCuatro": "./woman-colection/ddas4.png"
       },
       "idCategoria": 10
+    },
+    {
+      "nombre": "gygjhhg",
+      "precio": "vgvhvhgv",
+      "descripcion": "bhbhjbjh",
+      "img": {
+        "imagenUno": "bhjbhbjh",
+        "imagenDos": "nhbjh",
+        "imagenTres": "nkjbjb",
+        "imagenCuatro": "bjhvbhj}"
+      },
+      "id": 9
     }
   ],
   "categorias": [
