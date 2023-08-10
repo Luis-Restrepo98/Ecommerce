@@ -1,61 +1,140 @@
 const tablaBody = document.querySelector("#tabla-personas tbody");
+/* import {infoProductos} from "./api.js" */
 
 // URL declarada
-const URLClientes = "http://localhost:3000/informacionCliente"
+const URLProductos = "http://localhost:3000/productos/"
 
-// traer informacion de la base de datos
-axios.get(URLClientes)
+/* traer informacion de la base de datos */
+axios.get(URLProductos)
   .then(response => {
     const data = response.data;
-    data.forEach(persona => {
+    console.log(data);
+    
+data.forEach(producto => {
       const row = document.createElement("tr");
       row.innerHTML = `
-        <td>${persona.nombre}</td>
-        <td>${persona.cedula}</td>
-        <td>${persona.email}</td>
-        <td>${persona.celular}</td>
-        <td>${persona.numeroTarjeta}</td>
-        <button onclick="editarPersona(${persona.id})">Editar</button>
-        <button onclick="eliminarPersona(${persona.id})">Eliminar</button>
+        <td>${producto.nombre}</td>
+        <td>${producto.precio}</td>
+        <td>${producto.descripcion}</td>
+       
+        <button class="editar" onclick="editarProducto(${producto.id})">Editar</button>
+        <button class="eliminar" onclick="eliminarProducto(${producto.id})">Eliminar</button>
       </td>
       `;
+      
       tablaBody.appendChild(row);
     });
+ 
   })
   .catch(error => console.error("Error al obtener los datos:", error));
 
-  function editarPersona(id) {
-    const persona = datos.find(persona => persona.id === id);
-    if (persona) {
-      const nuevoNombre = prompt("Nuevo nombre:", persona.nombre);
-      if (nuevoNombre !== null) {
-        persona.nombre = nuevoNombre;
+ async function editarProducto(id) {
+  axios.get(URLProductos)
+  .then(response => {
+    const data = response.data;
+    const producto = data.find(producto => producto.id === id);
+    if (producto) {
+      const nuevoNombre = prompt("Nuevo nombre:", producto.nombre);
+      const nuevoPrecio = prompt("Nuevo precio:", producto.precio);
+      const nuevaDescripcion = prompt("Nueva descripcion:", producto.descripcion);
+      const edicion = {
+        "nombre": nuevoNombre,
+        "precio": nuevoPrecio,
+        "descripcion": nuevaDescripcion,
+        "img": {
+          "imagenUno": producto.img.imagenUno,
+        "imagenDos": producto.img.imagenDos,
+        "imagenTres": producto.img.imagenTres,
+        "imagenCuatro": producto.img.imagenCuatro,
+        } 
+      }
+  
 
         // Llamada Axios para actualizar el nombre en el servidor
-        axios.put(URLClientes`${id}`, { nombre: nuevoNombre })
+        axios.put(`${URLProductos}/${id}`, edicion)
           .then(response => {
             console.log("Persona actualizada:", response.data);
-            mostrarDatos();
+            /* mostrarDatos(); */
           })
           .catch(error => console.error("Error al actualizar:", error));
-      }
-    }
+       
+    
+    }})
+    .catch(error => console.error("Error al obtener los datos:", error));
+  
   }
 
-  function eliminarPersona(id) {
+ async function eliminarProducto(id) {
     const confirmacion = confirm("¿Estás seguro de eliminar esta persona?");
     if (confirmacion) {
       
         // Llamada Axios para eliminar la persona en el servidor
-      axios.delete(URLClientes`${id}`)
+      await axios.delete(`${URLProductos}/${id}`)
         .then(response => {
           console.log("Persona eliminada:", response.data);
-          datos = datos.filter(persona => persona.id !== id);
-          mostrarDatos();
+          datos = datos.filter(producto => producto.id !== id);
+         /*  mostrarDatos(); */
         })
         .catch(error => console.error("Error al eliminar:", error));
     }
   }
 
   // Inicialización: Mostrar datos al cargar la página
-  mostrarDatos();
+  /* mostrarDatos(); */
+
+  async function agregarProducto() {
+   
+   
+        const nuevoNombre = prompt("Nuevo nombre:");
+        const nuevoPrecio = prompt("Nuevo precio:");
+        const nuevaDescripcion = prompt("Nueva descripcion:");
+        const imagenUno = prompt("Ingresar URL del producto");
+        const imagenDos = prompt("Ingresar URL del producto");
+        const imagenTres = prompt("Ingresar URL del producto");
+        const imagenCuatro = prompt("Ingresar URL del producto");
+        const edicion = {
+          "nombre": nuevoNombre,
+          "precio": nuevoPrecio,
+          "descripcion": nuevaDescripcion,
+          "img": {
+            "imagenUno": imagenUno,
+          "imagenDos": imagenDos,
+          "imagenTres": imagenTres,
+          "imagenCuatro": imagenCuatro,
+          } 
+        }
+       
+  
+          // Llamada Axios para actualizar el nombre en el servidor
+          axios.post(`${URLProductos}`, edicion)
+            .then(response => {
+              console.log("Producto agregado:", response.data);
+              /* mostrarDatos(); */
+            })
+            .catch(error => console.error("Error al agregar:", error));
+  
+    }
+
+    /* async function refreshProducts() {
+      const productsData = await infoProductos();
+      displayProducts(productsData);
+    }
+  
+    refreshProducts();  
+  
+  
+    function displayProducts(productsData) {
+      const row = document.createElement("tr");
+      const productHTML = productsData.map(producto => `
+      
+      <td>${producto.nombre}</td>
+      <td>${producto.precio}</td>
+      <td>${producto.descripcion}</td>
+     
+      <button onclick="editarProducto(${producto.id})">Editar</button>
+      <button onclick="eliminarProducto(${producto.id})">Eliminar</button>
+    </td>
+        
+      `).join("");
+      row.innerHTML = `<ul>${productHTML}</ul>`;
+    } */
