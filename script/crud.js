@@ -17,8 +17,8 @@ data.forEach(producto => {
         <td>${producto.precio}</td>
         <td>${producto.descripcion}</td>
        
-        <button onclick="editarProducto(${producto.id})">Editar</button>
-        <button onclick="eliminarProducto(${producto.id})">Eliminar</button>
+        <button class="editar" onclick="editarProducto(${producto.id})">Editar</button>
+        <button class="eliminar" onclick="eliminarProducto(${producto.id})">Eliminar</button>
       </td>
       `;
       
