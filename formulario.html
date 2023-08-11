@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
         <title>E-commerce product page</title>
-        <link rel="stylesheet" href="./style/panel.css">
+        <link rel="stylesheet" href="./style/style.css">
         
 
         <style>
@@ -63,25 +63,23 @@
                 <!-- // ! -- final modal navbar -- // -->
 
                 <div class="header__cart-profile">
-
+                    <div class="header_cart">
+                        <div class="header_cart--notification">3</div>
+                        <img src="./images/icon-cart.svg" alt="cart">
+                    </div>
                     <a href="formulario.html"><img class="avatar" src="./images/image-avatar.png" alt="profile"></a>
                 </div>
             </header>
-            
-            
-            <h1>Lista de Productos</h1>
-            <table id="tabla-personas">
-              <thead>
-                <tr>
-                  <th>Nombre</th>
-                  <th>Precio</th>
-                  <th>Descripción</th>
-                </tr>
-              </thead>
-              <tbody></tbody>
-            </table>
-            
+            <form >
+                <input class="nombre" type="text" placeholder="nombre">
+                <input class="Precio" type="text" placeholder="Precio">
+                <input class="Descripción" type="text" placeholder="Descripción">
+                <input class="imagen-uno" type="text" placeholder="imagen-uno">
+                <input class="imagen-dos" type="text" placeholder="imagen-dos">
+                <input class="imagen-tres" type="text" placeholder="imagen-tres">
+                <input class="imagen-cuatro" type="text" placeholder="imagen-cuatro">
+                <button class="agregar" onclick="agregarProducto()">Agregar</button>
+            </form>
+        </main>   
     </body>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="./script/crud.js"></script>
-</html>
+</html>    

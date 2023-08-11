@@ -54,7 +54,6 @@ data.forEach(producto => {
         axios.put(`${URLProductos}/${id}`, edicion)
           .then(response => {
             console.log("Persona actualizada:", response.data);
-            /* mostrarDatos(); */
           })
           .catch(error => console.error("Error al actualizar:", error));
        
@@ -73,15 +72,12 @@ data.forEach(producto => {
         .then(response => {
           console.log("Persona eliminada:", response.data);
           datos = datos.filter(producto => producto.id !== id);
-         /*  mostrarDatos(); */
         })
         .catch(error => console.error("Error al eliminar:", error));
     }
   }
 
   // Inicialización: Mostrar datos al cargar la página
-  /* mostrarDatos(); */
-
   async function agregarProducto() {
    
    
@@ -103,38 +99,12 @@ data.forEach(producto => {
           "imagenCuatro": imagenCuatro,
           } 
         }
-       
-  
           // Llamada Axios para actualizar el nombre en el servidor
           axios.post(`${URLProductos}`, edicion)
             .then(response => {
               console.log("Producto agregado:", response.data);
-              /* mostrarDatos(); */
             })
             .catch(error => console.error("Error al agregar:", error));
   
     }
-
-    /* async function refreshProducts() {
-      const productsData = await infoProductos();
-      displayProducts(productsData);
-    }
   
-    refreshProducts();  
-  
-  
-    function displayProducts(productsData) {
-      const row = document.createElement("tr");
-      const productHTML = productsData.map(producto => `
-      
-      <td>${producto.nombre}</td>
-      <td>${producto.precio}</td>
-      <td>${producto.descripcion}</td>
-     
-      <button onclick="editarProducto(${producto.id})">Editar</button>
-      <button onclick="eliminarProducto(${producto.id})">Eliminar</button>
-    </td>
-        
-      `).join("");
-      row.innerHTML = `<ul>${productHTML}</ul>`;
-    } */

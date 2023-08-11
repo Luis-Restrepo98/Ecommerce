@@ -10,3 +10,9 @@ Panel de Administración de Productos:
 El participante deberá diseñar e implementar un Crud que permita agregar, editar y eliminar productos del marketplace.
 Se evaluará la funcionalidad del panel, asegurándose de que todas las acciones sean realizadas correctamente y sin errores.
 También será importante la facilidad de uso y la estética del panel de administración.
+
+
+hasta el sabado 
+modularización
+formulario
+ para grabar el video loom

@@ -90,17 +90,40 @@
       "idCategoria": 10
     },
     {
-      "id": 8,
-      "nombre": "Tenis Mujer 4",
-      "precio": "2000000",
-      "descripcion": "Son zapatos hechos para correr, ligeros, livianos y flexibles, con capellada en malla para mantener los pies frescos y secos, ideales para que el corredor despegue con fuerza hacia delante. Limpiar la capellada sucia con un cepillo de cerdas suaves, húmedo y jabón neutro o suave.",
+      "nombre": "luis",
+      "precio": "30000",
+      "descripcion": "sdfds",
       "img": {
-        "imagenUno": "./woman-colection/ddas1.png",
-        "imagenDos": "./woman-colection/ddas2.png",
-        "imagenTres": "./woman-colection/ddas3.png",
-        "imagenCuatro": "./woman-colection/ddas4.png"
+        "imagenUno": "https://tse3.mm.bing.net/th?id=OIP.jIl11qY2Tn0XCKfkuk7ZaQHaFT&pid=Api&P=0&h=180",
+        "imagenDos": "",
+        "imagenTres": "",
+        "imagenCuatro": ""
       },
-      "idCategoria": 10
+      "id": 10
+    },
+    {
+      "nombre": "zapato1",
+      "precio": "30000",
+      "descripcion": "zapatos",
+      "img": {
+        "imagenUno": "https://tse3.mm.bing.net/th?id=OIP.jIl11qY2Tn0XCKfkuk7ZaQHaFT&pid=Api&P=0&h=180",
+        "imagenDos": "https://tse3.mm.bing.net/th?id=OIP.jIl11qY2Tn0XCKfkuk7ZaQHaFT&pid=Api&P=0&h=180",
+        "imagenTres": "https://tse3.mm.bing.net/th?id=OIP.jIl11qY2Tn0XCKfkuk7ZaQHaFT&pid=Api&P=0&h=180",
+        "imagenCuatro": "https://tse3.mm.bing.net/th?id=OIP.jIl11qY2Tn0XCKfkuk7ZaQHaFT&pid=Api&P=0&h=180"
+      },
+      "id": 11
+    },
+    {
+      "nombre": "teni",
+      "precio": "20000",
+      "descripcion": "teni lindo",
+      "img": {
+        "imagenUno": null,
+        "imagenDos": null,
+        "imagenTres": null,
+        "imagenCuatro": null
+      },
+      "id": 12
     }
   ],
   "categorias": [
