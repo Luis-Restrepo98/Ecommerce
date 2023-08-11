@@ -1,85 +1,30 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style/form.css">
+</head>
+<body>
+  <form>
+    <label for="">Nombre</label>
+    <input type="text" placeholder="Nombre" class="nombre">
+    <label for="">Precio</label>
+    <input type="text" placeholder="Precio" class="precio">
+    <label for="">Descripcion</label>
+    <input type="text" placeholder="Descripcion" class="descripcion">
+    <label for="">Imagen 1</label>
+    <input type="text" placeholder="Imagen 1" class="imagenUno">
+    <label for="">Imagen 2</label>
+    <input type="text" placeholder="Imagen 2" class="imagenDos">
+    <label for="">Imagen 3</label>
+    <input type="text" placeholder="Imagen 3" class="imagenTres">
+    <label for="">Imagen 4</label>
+    <input type="text" placeholder="Imagen 4" class="imagenCuatro">
+    <button class="agregar">Agregar</button>
+  </form>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-        <title>E-commerce product page</title>
-        <link rel="stylesheet" href="./style/style.css">
-        
-
-        <style>
-            .attribution {
-                font-size: 16px;
-                text-align: center;
-            }
-
-            .attribution {
-                color: hsl(228, 45%, 44%);
-            }
-        </style>
-    </head>
-
-    <body>
-
-        <main class="main">
-            <header class="header">
-
-                <div class="header__navegador">
-                    <img class="menu" src="./images/icon-menu.svg" alt="menu icon">
-                    <a href="index.html"><img class="logo" src="./images/logo.svg" alt="logo"></a>
-
-                    <nav class="iconos-head">
-                        <ul class="iconos-head__items">
-                            <li><a class="iconos-head__link" href="new-colection.html">Collections</a></li>
-                            <li><a class="iconos-head__link" href="men-colection.html">Men</a></li>
-                            <li><a class="iconos-head__link" href="women-colection.html">Women</a></li>
-                            <li><a class="iconos-head__link" href="about.html">About</a></li>
-                            <li><a class="iconos-head__link" href="Contact.html">Contact</a></li>
-                            <li><a class="iconos-head__link" href="panel.html">Panel</a></li>
-                        </ul>
-
-                    </nav>
-
-                </div>
-
-
-                <!-- // ! -- inicio modal navbar -- // -->
-                <div class="head-background">
-                    <nav class="iconos-head2">
-                        <img class="iconos-head__close-icon" src="./images/icon-close.svg" alt="">
-                        <ul class="iconos-head__item">
-                            <li><a class="iconos-head__link" href="new-colection.html">Collections</a></li>
-                            <li><a class="iconos-head__link" href="men-colection.html">Men</a></li>
-                            <li><a class="iconos-head__link" href="women-colection.html">Women</a></li>
-                            <li><a class="iconos-head__link" href="about.html">About</a></li>
-                            <li><a class="iconos-head__link" href="Contact.html">Contact</a></li>
-                            <li><a class="iconos-head__link" href="panel.html">Panel</a></li>
-                        </ul>
-                    </nav>
-
-                </div>
-                <!-- // ! -- final modal navbar -- // -->
-
-                <div class="header__cart-profile">
-                    <div class="header_cart">
-                        <div class="header_cart--notification">3</div>
-                        <img src="./images/icon-cart.svg" alt="cart">
-                    </div>
-                    <a href="formulario.html"><img class="avatar" src="./images/image-avatar.png" alt="profile"></a>
-                </div>
-            </header>
-            <form >
-                <input class="nombre" type="text" placeholder="nombre">
-                <input class="Precio" type="text" placeholder="Precio">
-                <input class="Descripción" type="text" placeholder="Descripción">
-                <input class="imagen-uno" type="text" placeholder="imagen-uno">
-                <input class="imagen-dos" type="text" placeholder="imagen-dos">
-                <input class="imagen-tres" type="text" placeholder="imagen-tres">
-                <input class="imagen-cuatro" type="text" placeholder="imagen-cuatro">
-                <button class="agregar" onclick="agregarProducto()">Agregar</button>
-            </form>
-        </main>   
-    </body>
-</html>    
+  <script type="module" src="./script/CRUD/agregarProductos.js"></script>
+</body>
+</html>

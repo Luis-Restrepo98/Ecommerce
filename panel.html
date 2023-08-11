@@ -1,87 +1,119 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-        <title>E-commerce product page</title>
-        <link rel="stylesheet" href="./style/panel.css">
-        
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+		<title>E-commerce product page</title>
+		<link rel="stylesheet" href="./style/panel.css">
+		
 
-        <style>
-            .attribution {
-                font-size: 16px;
-                text-align: center;
-            }
+		<style>
+			.attribution {
+				font-size: 16px;
+				text-align: center;
+			}
 
-            .attribution {
-                color: hsl(228, 45%, 44%);
-            }
-        </style>
-    </head>
+			.attribution {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
 
     <body>
 
-        <main class="main">
-            <header class="header">
+			<main class="main">
+				<header class="header">
 
-                <div class="header__navegador">
-                    <img class="menu" src="./images/icon-menu.svg" alt="menu icon">
-                    <a href="index.html"><img class="logo" src="./images/logo.svg" alt="logo"></a>
+						<div class="header__navegador">
+								<img class="menu" src="./images/icon-menu.svg" alt="menu icon">
+								<a href="index.html"><img class="logo" src="./images/logo.svg" alt="logo"></a>
 
-                    <nav class="iconos-head">
-                        <ul class="iconos-head__items">
-                            <li><a class="iconos-head__link" href="new-colection.html">Collections</a></li>
-                            <li><a class="iconos-head__link" href="men-colection.html">Men</a></li>
-                            <li><a class="iconos-head__link" href="women-colection.html">Women</a></li>
-                            <li><a class="iconos-head__link" href="about.html">About</a></li>
-                            <li><a class="iconos-head__link" href="Contact.html">Contact</a></li>
-                            <li><a class="iconos-head__link" href="panel.html">Panel</a></li>
-                        </ul>
+								<nav class="iconos-head">
+										<ul class="iconos-head__items">
+												<li><a class="iconos-head__link" href="new-colection.html">Collections</a></li>
+												<li><a class="iconos-head__link" href="men-colection.html">Men</a></li>
+												<li><a class="iconos-head__link" href="women-colection.html">Women</a></li>
+												<li><a class="iconos-head__link" href="about.html">About</a></li>
+												<li><a class="iconos-head__link" href="Contact.html">Contact</a></li>
+												<li><a class="iconos-head__link" href="panel.html">Panel</a></li>
+										</ul>
 
-                    </nav>
+								</nav>
 
-                </div>
+						</div>
 
 
-                <!-- // ! -- inicio modal navbar -- // -->
-                <div class="head-background">
-                    <nav class="iconos-head2">
-                        <img class="iconos-head__close-icon" src="./images/icon-close.svg" alt="">
-                        <ul class="iconos-head__item">
-                            <li><a class="iconos-head__link" href="new-colection.html">Collections</a></li>
-                            <li><a class="iconos-head__link" href="men-colection.html">Men</a></li>
-                            <li><a class="iconos-head__link" href="women-colection.html">Women</a></li>
-                            <li><a class="iconos-head__link" href="about.html">About</a></li>
-                            <li><a class="iconos-head__link" href="Contact.html">Contact</a></li>
-                            <li><a class="iconos-head__link" href="panel.html">Panel</a></li>
-                        </ul>
-                    </nav>
+						<!-- // ! -- inicio modal navbar -- // -->
+						<div class="head-background">
+								<nav class="iconos-head2">
+										<img class="iconos-head__close-icon" src="./images/icon-close.svg" alt="">
+										<ul class="iconos-head__item">
+												<li><a class="iconos-head__link" href="new-colection.html">Collections</a></li>
+												<li><a class="iconos-head__link" href="men-colection.html">Men</a></li>
+												<li><a class="iconos-head__link" href="women-colection.html">Women</a></li>
+												<li><a class="iconos-head__link" href="about.html">About</a></li>
+												<li><a class="iconos-head__link" href="Contact.html">Contact</a></li>
+												<li><a class="iconos-head__link" href="panel.html">Panel</a></li>
+										</ul>
+								</nav>
 
-                </div>
-                <!-- // ! -- final modal navbar -- // -->
+						</div>
+						<!-- // ! -- final modal navbar -- // -->
 
-                <div class="header__cart-profile">
+						<div class="header__cart-profile">
 
-                    <a href="formulario.html"><img class="avatar" src="./images/image-avatar.png" alt="profile"></a>
-                </div>
-            </header>
-            
-            
-            <h1>Lista de Productos</h1>
-            <table id="tabla-personas">
-              <thead>
-                <tr>
-                  <th>Nombre</th>
-                  <th>Precio</th>
-                  <th>Descripción</th>
-                </tr>
-              </thead>
-              <tbody></tbody>
-            </table>
-            
-    </body>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="./script/crud.js"></script>
+								<a href="formulario.html"><img class="avatar" src="./images/image-avatar.png" alt="profile"></a>
+						</div>
+				</header>
+				<h1>Lista de Productos</h1>
+				<table id="tabla-personas">
+					<thead>
+						<tr>
+							<th>Nombre</th>
+							<th>Precio</th>
+							<th>Descripción</th>
+						</tr>
+					</thead>
+					<tbody></tbody>
+				</table>	
+			</main>
+			<!-- modal para editar producto -->
+			<div class="modal-editar-producto__background">
+				<div class="modal-editar-producto">
+					<button class="cerrar">X</button>
+					<h2 class="modal-editar-producto__title">Editar Producto</h2>
+					<form class="modal-editar-producto__form">
+						<label for="">Nuevo nombre</label>
+						<input type="text" class="nuevo-nombre" placeholder="Nuevo nombre">
+						<label for="">Nuevo precio</label>
+						<input type="text" class="nuevo-precio" placeholder="Nuevo precio">
+						<label for="">Nueva descripción</label>
+						<input type="text" class="nueva-descripcion" placeholder="Nueva descripción">
+						<button class="aceptar">Aceptar</button>
+					</form>
+				</div>
+			</div> 
+			<!-- Modal para editar producto -->
+			
+			<!-- Modal eliminar producto -->
+			<div class="modal-eliminar-producto__background">
+				<div class="modal-eliminar-producto">
+					<h2 class="modal-eliminar-producto__title">¿Está seguro que desea eliminar este product?</h2>
+					<div class="modal-eliminar-producto__contenedor-botones">
+						<button class="modal-eliminar-producto__contenedor-botones--yes modal-button">Si</button>
+						<button class="modal-eliminar-producto__contenedor-botones--not modal-button">No</button>
+					</div>
+				</div>
+			</div>
+			<!-- Modal eliminar producto -->
+			
+	</body>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<!-- <script src="./script/crud.js"></script> -->
+	<script type="module" src="./script/CRUD/mostrarProductos.js"></script>
+	<script type="module" src="./script/CRUD/editarProducto.js"></script>
+	<script type="module" src="./script/CRUD/eliminarProducto.js"></script>
+
 </html>
