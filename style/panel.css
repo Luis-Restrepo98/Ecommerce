@@ -21,6 +21,7 @@
 
 body {
     font-family: "kumbh Sans", sans-serif;
+    position: relative;
 }
 
 .main {
@@ -272,4 +273,124 @@ h1 {
     cursor: pointer;
     border: 2px solid var(--black-modal);
     opacity: 0.7;
-  }
+}
+
+.modal-editar-producto__background {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--black-modal);
+    /* display: grid; */
+    display: none;
+    place-content: center;
+}
+
+.modal-editar-producto, .modal-eliminar-producto {
+    width: 375px;
+    height: 400px;
+    background-color: var(--white);
+    display: grid;
+    place-content: center;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.modal-editar-producto {
+    position: relative;
+}
+
+.modal-eliminar-producto {
+    height: 200px;
+}
+
+.cerrar {
+    width: 20px;
+    height: 20px;
+    color: var(--orange);
+    font-size: 28px;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+    place-content: center;
+}
+
+input {
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid var(--grayish-blue);
+    padding: 0 15px;
+}
+
+input:focus {
+    outline: 2px solid green;
+}
+
+.aceptar {
+    cursor: pointer;
+    width: 90px;
+    height: 30px;
+    background-color: var(--orange);
+    color: azure;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.modal-eliminar-producto__background {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--black-modal);
+    /* display: grid; */
+    display: none;
+    place-content: center;
+}
+
+.modal-eliminar-producto__title {
+    text-align: center;
+}
+
+.modal-eliminar-producto__contenedor-botones {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.modal-button {
+    cursor: pointer;
+    width: 110px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--white);
+}
+
+.modal-eliminar-producto__contenedor-botones--yes {
+    background-color: var(--orange);
+}
+
+.modal-eliminar-producto__contenedor-botones--not {
+    background-color: var(--dark-grayish-blue);
+}
+
+ 

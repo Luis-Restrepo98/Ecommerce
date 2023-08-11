@@ -1,31 +1,6 @@
 {
   "productos": [
     {
-      "nombre": "Tenis hombre 1",
-      "precio": "30000",
-      "descripcion": "¡Aprovecha hoy! Conoce en adidas tu calzado deportivo favorito y haz tu estilo único. Únete a adiClub y obtén 20% de dto. Envío a todo Ecuador. Seguimiento de pedido",
-      "img": {
-        "imagenUno": "./new-colection/1.png",
-        "imagenDos": "./new-colection/1.1.png",
-        "imagenTres": "./new-colection/1.2.png",
-        "imagenCuatro": "./new-colection/1.3.png"
-      },
-      "id": 1
-    },
-    {
-      "id": 2,
-      "nombre": "Tenis hombre 2",
-      "precio": "40000",
-      "descripcion": "¡Aprovecha hoy! Conoce en adidas tu calzado deportivo favorito y haz tu estilo único. Únete a adiClub y obtén 20% de dto. Envío a todo Ecuador. Seguimiento de pedido",
-      "img": {
-        "imagenUno": "./new-colection/2.png",
-        "imagenDos": "./new-colection/2.1.png",
-        "imagenTres": "./new-colection/2.1.png",
-        "imagenCuatro": "./new-colection/2.1.png"
-      },
-      "idCategoria": 11
-    },
-    {
       "id": 3,
       "nombre": "Tenis hombre 3",
       "precio": "50000",
@@ -101,6 +76,36 @@
         "imagenCuatro": "./woman-colection/ddas4.png"
       },
       "idCategoria": 10
+    },
+    {
+      "nombre": "Tacones",
+      "precio": "456",
+      "descripcion": "Nueva descripción",
+      "id": 11
+    },
+    {
+      "nombre": "Tenis",
+      "precio": "150",
+      "descripcion": "Son zapatos para correr",
+      "img": {
+        "imagenUno": "https://images.unsplash.com/photo-1524532787116-e70228437bbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80",
+        "imagenDos": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+        "imagenTres": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+        "imagenCuatro": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80"
+      },
+      "id": 13
+    },
+    {
+      "nombre": "Tenis de mujer",
+      "precio": "280",
+      "descripcion": "Son muy elegantes",
+      "img": {
+        "imagenUno": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+        "imagenDos": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+        "imagenTres": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80",
+        "imagenCuatro": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80"
+      },
+      "id": 14
     }
   ],
   "categorias": [

@@ -1,0 +1,28 @@
+form {
+  display: grid;
+  gap: 10px;
+  place-content: center;
+}
+
+input {
+  width: 250px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+
+input:focus {
+  outline: 2px solid green;
+}
+
+.agregar {
+  cursor: pointer;
+  width: 90px;
+  height: 30px;
+  background-color: orange;
+  color: azure;
+  border: none;
+  border-radius: 7px;
+  font-size: 16px;
+  font-weight: 700;
+}
