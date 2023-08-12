@@ -319,6 +319,7 @@ h1 {
 }
 
 form {
+
     display: grid;
     gap: 10px;
     place-content: center;
@@ -333,19 +334,26 @@ input {
 }
 
 input:focus {
-    outline: 2px solid green;
+    outline: 2px solid var(--black);
 }
 
 .aceptar {
+    margin-left: 80px;
+    margin-top: 30px;
     cursor: pointer;
-    width: 90px;
-    height: 30px;
+    width: 100px;
+    height: 50px;
     background-color: var(--orange);
     color: azure;
     border: none;
     border-radius: 7px;
     font-size: 16px;
     font-weight: 700;
+}
+.modal-editar-producto__title{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .modal-eliminar-producto__background {

@@ -65,46 +65,10 @@
       "idCategoria": 10
     },
     {
-      "nombre": "luis",
-      "precio": "30000",
-      "descripcion": "sdfds",
-      "img": {
-        "imagenUno": "https://tse3.mm.bing.net/th?id=OIP.jIl11qY2Tn0XCKfkuk7ZaQHaFT&pid=Api&P=0&h=180",
-        "imagenDos": "",
-        "imagenTres": "",
-        "imagenCuatro": ""
-      },
-      "idCategoria": 10
-    },
-    {
-      "nombre": "Tacones",
-      "precio": "456",
-      "descripcion": "Nueva descripción",
-      "id": 11
-    },
-    {
-      "nombre": "Tenis",
-      "precio": "150",
-      "descripcion": "Son zapatos para correr",
-      "img": {
-        "imagenUno": "https://images.unsplash.com/photo-1524532787116-e70228437bbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80",
-        "imagenDos": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
-        "imagenTres": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-        "imagenCuatro": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80"
-      },
-      "id": 13
-    },
-    {
-      "nombre": "Tenis de mujer",
-      "precio": "280",
-      "descripcion": "Son muy elegantes",
-      "img": {
-        "imagenUno": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-        "imagenDos": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
-        "imagenTres": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80",
-        "imagenCuatro": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80"
-      },
-      "id": 14
+      "nombre": "posada",
+      "precio": "awsedf",
+      "descripcion": "asdf",
+      "id": 8
     }
   ],
   "categorias": [

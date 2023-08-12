@@ -172,10 +172,17 @@ body {
   cursor: pointer;
 }
 
+/*formulario*/
+
 form {
+  padding-top: 30px;
   display: grid;
   gap: 10px;
   place-content: center;
+    background-image: url("../images/mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
 }
 
 input {
@@ -186,17 +193,39 @@ input {
 }
 
 input:focus {
-  outline: 2px solid green;
+  outline: 2px solid var(--black);
 }
 
 .agregar {
+  margin-left: 90px;
   cursor: pointer;
   width: 90px;
   height: 30px;
-  background-color: orange;
+  background-color: var(--black);
   color: azure;
   border: none;
   border-radius: 7px;
   font-size: 16px;
   font-weight: 700;
+}
+.info_form{
+  font-weight: bold;
+}
+@media (min-width: 1115px) {
+  input {
+      width: 350px;
+  }
+}
+@media (min-width: 1115px) {
+  form {
+    background-image: url("../images/Sin\ título\ \(1400\ ×\ 900\ px\)\ \(1\).png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+  }
+}
+@media (min-width: 1115px) {
+    .agregar {
+      margin-left: 140px;
+    }
 }
